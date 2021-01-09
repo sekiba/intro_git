@@ -29,5 +29,14 @@ GITでのコマンド
 　　　削除　　　　　　　　　git rm ファイル名　 ★　（消した場合はaddではだめ）
 　　　複数ファイルの変更    git add .(全部)
 ・ファイルの変更差分の表示
-　　 git diff　★
-   #git add , git commit の前に確認する。ローカルとステージングの差分を表示する。
+　　 git diff　★　　(ステージングとローカルの差分の確認）　：add前
+　　 git diff head ★　（ステージングと最新コミットとの差分）　：comitt前
+　   #git add , git commit の前に確認する。ローカルとステージングの差分を表示する。
+・リモートリポジトリ（GitHub）へファイルをPUSHする
+　　 git remote add 　origin   https://github.com/。。。。。 (HTML画面に出るやつ）
+　　リモートリポジトリを登録する場合はデフォでoriginという名前
+　　git push origin master ★　（originというリモートリポジトリへ　masterブランチを送付する）
+・GITで管理したくないfileの扱い
+　　.gitignore　に設定する。
+　　パスワードが記載されるファイル、　OSで自動で生成されるファイル
+
