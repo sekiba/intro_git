@@ -4,3 +4,5 @@
 git add
 git commit
 ‚ð“ü‚ê‚é
+
+git status
